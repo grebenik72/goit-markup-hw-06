@@ -261,6 +261,7 @@ background-color: var(--accent-color);
 .filter-btn-activ:focus{
     color: var(--main-titel-color);
     background-color: var(--accent-color);
+    border-color: transparent;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -609,7 +610,6 @@ transition: opacity var(--transition), visibility var(--transition);
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    align-items: center;
     background-color: var(--fotter-text-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: fill var(--transition), background-color var(--transition), border var(--transition);
@@ -648,6 +648,7 @@ transition: opacity var(--transition), visibility var(--transition);
     margin-bottom: 16px;
 }
 .label-text {
+    display: block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -705,14 +706,17 @@ transition: opacity var(--transition), visibility var(--transition);
 .send {
     display: block;
     margin: auto;
-    width: 169px;
+    min-width: 169px;
 }
 .checkbox {
     display: flex;
+    margin-top: 16px;
+    margin-bottom: 24px;
 }
 .check-text {
     display: flex;
     gap: 8px;
+    align-items: center;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
